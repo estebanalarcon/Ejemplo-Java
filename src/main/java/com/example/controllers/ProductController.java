@@ -36,6 +36,12 @@ public class ProductController {
         return productRepository.findProductById(productId);
     }
 
+    @RequestMapping(path = "/create", method = RequestMethod.POST)
+    @ResponseBody
+    public Product create(@RequestBody Product resource) {
+        return productRepository.save(resource);
+    }
+
 
 }
 

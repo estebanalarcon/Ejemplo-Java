@@ -23,6 +23,7 @@ public class Product {
 
     private Integer category;
 
+
     public Integer getId() {
         return id;
     }
