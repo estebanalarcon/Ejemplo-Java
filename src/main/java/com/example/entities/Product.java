@@ -1,7 +1,7 @@
 package com.example.entities;
 
-import sun.jvm.hotspot.utilities.IntegerEnum;
 
+import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.GeneratedValue;
@@ -47,7 +47,7 @@ public class Product {
         this.cost = cost;
     }
 
-    public Integer getExpirationDate() {
+    public Date getExpirationDate() {
         return this.expirationDate;
     }
 
